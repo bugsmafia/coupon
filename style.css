@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input:focus { outline: none; }
+.search {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #d13a7a;
+}
+.finder {
+    height: 10vh;
+}
+#list {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    overflow: overlay;
+}
+#list li {
+    display: block;
+    font-size: 18px;
+    padding: 0.3em 1em;
+    cursor: pointer;
+}
+#list li:hover {
+    background: rgba(0,0,0,0.04);
+}
+
+#full {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #fff;
+	display: none;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 300;
+    color: #999;
+    text-transform: inherit;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+
+    padding: 30px;
+    z-index: 29;
+    position: fixed;
+    top: 0px;
+
+    width: 100%;
+}
+.title t {
+    /* padding: 0 30px; */
+    width: 100%;
+    display: block;
+    margin: 0 -30px;
+    /* font-size: 3em; */
+    display: block;
+    /* clear: both; */
+    position: fixed;
+    top: 0px;
+    width: 90%;
+    text-align: center;
+    background: #fff;
+    line-height: 30px;
+    margin: 0 0 0 -2.5%;
+	    border-bottom: 1px solid #eee;
+	    padding: 20px 0px;
+}
+.title span {
+    /* font-size: 3em; */
+    display: block;
+    /* clear: both; */
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    line-height: 65px;
+    margin: 0 -30px;
+}
+.code-gen {
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden !important;
+    z-index: 0;
+}
+.code-gen object {
+    width: 100%;
+    height: 100%;
+}
+
+.none {
+	display: none;
+}
+.search input#search {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    margin-top: -50px;
+    margin-left: 0px;
+    width: 82%;
+    height: 6vh;
+    padding: 0em 1em;
+    background: inherit;
+    border: inherit;
+    color: #FFF;
+    text-transform: uppercase;
+    border-left: 4px solid rgba(255, 255, 255, 0.38);
+}
+.search input#search::-webkit-input-placeholder {color:#fff;}
+.search input#search::-moz-placeholder          {color:#fff;}
+.search input#search:-moz-placeholder           {color:#fff;}
+.search input#search:-ms-input-placeholder      {color:#fff;}
+.search input#search:-input-placeholder      {color:#fff;}
+.ms-container {
+width: 100%;
+}
+.ms-container .ms-list {
+border: 1px solid #eee;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+position: relative;
+height: 200px;
+padding: 0;
+overflow-y: auto;
+position: relative;
+height: 100%;
+overflow: hidden; 
+max-width: 100%;
+    height: 83vh;
+box-shadow: none;
+}
+.ms-container .ms-selectable li.ms-elem-selectable {
+border-bottom: 1px #eee solid;
+padding: 6px 13px;
+color: #555;
+font-size: 14px;
+font-size: 13px;
+color: #999;
+text-transform: uppercase;
+font-weight: 500;
+}

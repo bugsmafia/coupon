@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Купоны и скидки</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="search"><input id="search" placeholder="Поиск купона магазина" autocomplete="off"></div>
+<div class="ms-container">
+<div class="ms-selectable">
+<ul id="list" class="ms-list none">
+	<li class="ms-elem-selectable" onclick="coupon('0001')">Алмаз - Холдинг (3%)</li>
+	<li class="ms-elem-selectable" onclick="coupon('0002')">Золотой</li>
+	<li class="ms-elem-selectable" onclick="coupon('0003')">Красное & Белое</li>
+	<li class="ms-elem-selectable" onclick="coupon('0004')">Теплос</li>
+	<li class="ms-elem-selectable" onclick="coupon('0005')">Рив Гош (синяя)</li>
+	<li class="ms-elem-selectable" onclick="coupon('0006')">Спортмастер</li>
+	<li class="ms-elem-selectable" onclick="coupon('0007')">Бест - Маркет</li>
+	<li class="ms-elem-selectable" onclick="coupon('0008')">Живика (аптека)</li>
+	<li class="ms-elem-selectable" onclick="coupon('0009')">Декатлон</li>
+	<li class="ms-elem-selectable" onclick="coupon('0010')">Sunlight</li>
+	<li class="ms-elem-selectable" onclick="coupon('0011')">Gloria - Jeans</li>
+	<li class="ms-elem-selectable" onclick="coupon('0012')">Лекарь</li>
+	<li class="ms-elem-selectable" onclick="coupon('0013')">Алмаз - Холдинг (7%)</li>
+	<li class="ms-elem-selectable" onclick="coupon('0014')">Красное & Белое (Алкоточка)</li>
+	<li class="ms-elem-selectable" onclick="coupon('0015')">CiteMarilou</li>
+	<li class="ms-elem-selectable" onclick="coupon('0016')">MilaVitsa</li>
+	<li class="ms-elem-selectable" onclick="coupon('0017')">Норд</li>
+	<li class="ms-elem-selectable" onclick="coupon('0018')">Маркер Игрушка</li>
+	<li class="ms-elem-selectable" onclick="coupon('0019')">fitmenu.ru</li>
+</ul>
+</div>
+</div>
+<div id="full">
+	<div class="code-gen"></div>
+	<div class="title"></div>
+</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.fastLiveFilter.js"></script>
+	<script src="jquery-barcode.js"></script>
+<script>
+    $(function() {
+        $('#search').fastLiveFilter('#list');
+    });	
+	$("#search").keyup(function() {
+			$text =  $(this).val();
+		if ($text.length > 0){
+			$(".search").addClass("finder");
+			$("#list").removeClass("none");
+		} else {
+			$(".search").removeClass("finder");
+			$("#list").addClass("none");
+		}
+	});
+</script>
+<script src="jquery.touchSwipe.js"></script>
+<script src="base.js"></script>
+</body>
+</html>
